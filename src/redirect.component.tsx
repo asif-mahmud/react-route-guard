@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useEffect } from "react";
 import { useRouteGuard } from "./use-route-guard.hook";
 
 type RedirectProps = {
@@ -8,7 +8,7 @@ type RedirectProps = {
 export function Redirect({ to }: RedirectProps) {
   const { routeChanger, pageLoader: PageLoader } = useRouteGuard();
 
-  useMemo(() => {
+  useEffect(() => {
     routeChanger(to);
   }, []);
 

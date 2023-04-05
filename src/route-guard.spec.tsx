@@ -147,8 +147,7 @@ function GlobalContextProvider() {
           advisorArgs={{ loggedIn, route }}
           routeAdvisor={routeAdvisor}
           routeChanger={(to) => {
-            // delay rendering for removing the warning
-            setTimeout(() => setRoute(to), 10);
+            setRoute(to);
           }}
         >
           <Application />
