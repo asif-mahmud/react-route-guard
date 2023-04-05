@@ -1,0 +1,8 @@
+#+AUTHOR: Asif Mahmud Shimon
+#+STARTUP: content indent showall
+
+* React Route Guard
+A generic route guard provider component to wrap and protect all your routes.
+It can be used in any react project including NextJS projects, mostly because
+it uses built-in react hooks and API to provide a way to create a top level
+route guard for your application.
