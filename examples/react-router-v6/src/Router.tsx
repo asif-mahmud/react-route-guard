@@ -3,7 +3,7 @@ import { Home } from "./Home";
 import { Layout } from "./Layout";
 import { Login } from "./Login";
 import { Logout } from "./Logout";
-import { UserAccountPage } from "./UserAccount";
+import { UserAccount } from "./UserAccount";
 
 export const Router = createBrowserRouter([
   {
@@ -16,7 +16,7 @@ export const Router = createBrowserRouter([
       },
       {
         path: "/user-account",
-        element: <UserAccountPage />,
+        element: <UserAccount />,
       },
       {
         path: "/login",
